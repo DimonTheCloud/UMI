@@ -23,14 +23,14 @@ pacienti = [
 
 
 def je_senior(pacient, hranice_veku=65):
-    return pacient["tf"] >= hranice_veku
+    return pacient["vek"] >= hranice_veku
 
 
 def prumerna_tf_seniori(pacienti, hranice_veku=65):
     soucet = 0
     for pacient in pacienti:
-        soucet += pacient["tf"]
-
+        if je_senior(pacient, hranice_veku):
+            soucet += pacient["tf"]
     pocet = 0
     for pacient in pacienti:
         if je_senior(pacient, hranice_veku):
@@ -47,11 +47,11 @@ def prumerny_vek_pacientu(pacienti):
 
 
 def bmi(vaha_kg, vyska_cm):
-    return vaha_kg / (vyska_cm ** 2)
+    return vaha_kg / ((vyska_cm/100) ** 2)
 
 
 def je_mladsi(pacient, hranice_veku=65):
-    return pacient["vek"] <= hranice_veku
+    return pacient["vek"] < hranice_veku
 
 
 def pocet_mladych_pacientu(pacienti, hranice_veku=65):
