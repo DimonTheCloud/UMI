@@ -32,6 +32,7 @@ jmeno = "Novak"
 kody = text_na_kody(jmeno)
 print("Kody:", kody)
 
+
 zpet = kody_na_text(kody)
 print("Dekodovano zpet:", zpet)
 print("Sedi to s puvodnim jmenem?", zpet == jmeno)

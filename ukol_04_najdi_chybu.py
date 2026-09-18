@@ -50,6 +50,7 @@ def bmi(vaha_kg, vyska_cm):
     return vaha_kg / ((vyska_cm/100) ** 2)
 
 
+
 def je_mladsi(pacient, hranice_veku=65):
     return pacient["vek"] < hranice_veku
 
