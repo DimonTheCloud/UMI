@@ -14,7 +14,7 @@ TODO 2: doplnte funkci kody_na_text, ktera ze seznamu ASCII kodu
 
 def text_na_kody(text):
     # TODO 1
-    ...
+
 
 
 def kody_na_text(kody):

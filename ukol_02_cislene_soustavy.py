@@ -11,17 +11,22 @@ def prevod_do_soustavy(cislo, soustava):
 
     # TODO 1: osetrete, ze soustava je podporovana (2, 8 nebo 16) -
     # pokud ne, vratte retezec "Pozor: nepodporovana soustava"
-    ...
+    if soustava not in (2, 8, 16):
+        return "Pozor: nepodporovana soustava"
 
     if cislo == 0:
         return "0"
 
-    vysledek = ""
     # TODO 2: doplnte prevod cisla do zvolene soustavy - funkce ma vratit
     # presne to, co bude ulozene v promenne vysledek
-    ...
 
+    vysledek = ""
+    while  cislo != 0:
+        zbytek = cislo % soustava
+        vysledek = cislice[zbytek] + vysledek
+        cislo = cislo // soustava
+    return vysledek
 
 print("175 -> binarne: ", prevod_do_soustavy(175, 2))
 print("175 -> hexa:    ", prevod_do_soustavy(175, 16))
-print("143 -> oktalne: ", prevod_do_soustavy(175, 8))
+print("175 -> oktalne: ", prevod_do_soustavy(175, 8))
