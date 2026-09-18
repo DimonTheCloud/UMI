@@ -27,6 +27,7 @@ def prevod_do_soustavy(cislo, soustava):
         cislo = cislo // soustava
     return vysledek
 
+
 print("175 -> binarne: ", prevod_do_soustavy(175, 2))
 print("175 -> hexa:    ", prevod_do_soustavy(175, 16))
 print("175 -> oktalne: ", prevod_do_soustavy(175, 8))

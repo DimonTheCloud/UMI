@@ -16,7 +16,6 @@ def text_na_kody(text):
     # TODO 1
 
 
-
 def kody_na_text(kody):
     # TODO 2
     ...
