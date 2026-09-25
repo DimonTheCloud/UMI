@@ -9,14 +9,14 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 
 # TODO 1: nactete FASTA soubor, ktery jste stahli z NCBI
-record = ...
+record = open("streptococcus.fasta", "rU")
 
 # TODO 2: vypiste jednotlive atributy - id, popis (.description) a delku sekvence
-...
+attribute_id =
 
 # TODO 3: vyindexujte prvnich 50 nukleotidu sekvence do promenne
 # "novy_uryvek"
-novy_uryvek = ...
+novy_uryvek =
 
 # TODO 4: vytvorte novy SeqRecord z "novy_uryvek" s id "Streptococcus_50NT"
 novy_record = ...
