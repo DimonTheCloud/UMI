@@ -1,0 +1,93 @@
+[
+    {
+        "jmeno": "Petr",
+        "prijmeni": "Novak",
+        "pozice": "lekar",
+        "oddeleni": "interna",
+        "plat": 85000
+    },
+    {
+        "jmeno": "Klara",
+        "prijmeni": "Svobodova",
+        "pozice": "sestra",
+        "oddeleni": "interna",
+        "plat": 42000
+    },
+    {
+        "jmeno": "Jan",
+        "prijmeni": "Kovar",
+        "pozice": "sanitar",
+        "oddeleni": "chirurgie",
+        "plat": 32000
+    },
+    {
+        "jmeno": "Anna",
+        "prijmeni": "Horakova",
+        "pozice": "sestra",
+        "oddeleni": "pediatrie",
+        "plat": 41000
+    },
+    {
+        "jmeno": "Jiri",
+        "prijmeni": "Cerny",
+        "pozice": "lekar",
+        "oddeleni": "chirurgie",
+        "plat": 95000
+    },
+    {
+        "jmeno": "Eva",
+        "prijmeni": "Dvorakova",
+        "pozice": "fyzioterapeut",
+        "oddeleni": "ARO",
+        "plat": 38000
+    },
+    {
+        "jmeno": "Tomas",
+        "prijmeni": "Prochazka",
+        "pozice": "lekar",
+        "oddeleni": "ARO",
+        "plat": 105000
+    },
+    {
+        "jmeno": "Lucie",
+        "prijmeni": "Novotna",
+        "pozice": "sestra",
+        "oddeleni": "chirurgie",
+        "plat": 43000
+    },
+    {
+        "jmeno": "Martin",
+        "prijmeni": "Kral",
+        "pozice": "sanitar",
+        "oddeleni": "pediatrie",
+        "plat": 30000
+    },
+    {
+        "jmeno": "Petra",
+        "prijmeni": "Vesela",
+        "pozice": "lekar",
+        "oddeleni": "pediatrie",
+        "plat": 88000
+    },
+    {
+        "jmeno": "Alena",
+        "prijmeni": "Kratka",
+        "pozice": "lekar",
+        "oddeleni": "interna",
+        "plat": 92000
+    },
+    {
+        "jmeno": "Marek",
+        "prijmeni": "Dlouhy",
+        "pozice": "lekar",
+        "oddeleni": "chirurgie",
+        "plat": 99000
+    },
+    {
+        "jmeno": "Zuzana",
+        "prijmeni": "Havlova",
+        "pozice": "lekar",
+        "oddeleni": "ARO",
+        "plat": 110000
+    }
+]
