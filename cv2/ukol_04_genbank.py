@@ -9,16 +9,21 @@ ve formatu GenBank.
 from Bio import SeqIO
 
 # TODO 1: nactete GenBank soubor, ktery jste stahli z NCBI
-record = ...
+record = SeqIO.read("sequence.gb", "genbank")
+
 
 # TODO 2: vypiste jednotlive atributy - id, popis (.description) a delku sekvence
-...
+print(record.id)
+print(record.annotations)
+print(record.features[:])
+print(record.description)
+
 
 # TODO 3: v record.features najdete CDS jehoz produkt je "staphylococcal protein A".
 # Vysledek ulozte do promenne "cds"
 hledany_produkt = "staphylococcal protein A"
 
-cds = ...
+cds =
 
 # TODO 4: u nalezeneho CDS vypiste jeho polohu (.location) a prelozeny protein (qualifiers["translation"])
 ...

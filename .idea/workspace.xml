@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eca773f-1424-4566-be3a-d006f40012db" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv2/streptoCOCK.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/cv2/streptocok.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv2/ukol_03_fasta.py" beforeDir="false" afterPath="$PROJECT_DIR$/cv2/ukol_03_fasta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv2/ukol_04_genbank.py" beforeDir="false" afterPath="$PROJECT_DIR$/cv2/ukol_04_genbank.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,7 @@
     "Python.ukol_02_seq_zaklady.executor": "Run",
     "Python.ukol_03_ascii.executor": "Run",
     "Python.ukol_03_fasta.executor": "Run",
+    "Python.ukol_04_genbank.executor": "Run",
     "Python.ukol_04_najdi_chybu.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -144,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790323622390</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1">
+      <option name="closed" value="true" />
+      <created>1790324362745</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1790324362745</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
