@@ -1,0 +1,4 @@
+[dependency-groups]
+dev = [
+    "biopython>=1.88",
+]

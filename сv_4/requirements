@@ -1,0 +1,8 @@
+pydicom>=3.0
+nibabel>=5.4
+scikit-image>=0.26
+imagecodecs>=2026.10
+matplotlib>=3.9
+numpy>=2.0
+pillow>=12.0
+napari[pyqt6]>=0.9

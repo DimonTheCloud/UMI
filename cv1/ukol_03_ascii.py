@@ -14,18 +14,24 @@ TODO 2: doplnte funkci kody_na_text, ktera ze seznamu ASCII kodu
 
 def text_na_kody(text):
     # TODO 1
-    ...
-
+    kody = []
+    for znak in text:
+        kody.append(ord(znak))
+    return kody
 
 def kody_na_text(kody):
     # TODO 2
-    ...
+    jmeno = ""
+    for k in kody:
+        jmeno += (chr(k))
+    return jmeno
 
 
 jmeno = "Novak"
 
 kody = text_na_kody(jmeno)
 print("Kody:", kody)
+
 
 zpet = kody_na_text(kody)
 print("Dekodovano zpet:", zpet)
