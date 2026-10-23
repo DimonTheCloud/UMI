@@ -5,7 +5,7 @@ Vytvorte jednoduche okno a postupne ho rozsirte o ruzne widgety
 z knihovny ttk. Widgety umistete pomoci pack().
 """
 
-from tkinter import Tk, Listbox, Label
+from tkinter import Tk, Listbox, Label, Button
 from tkinter import ttk
 
 # TODO 1: vytvorte hlavni okno (Tk), nastavte titulek a velikost okna
@@ -41,8 +41,17 @@ listbox.pack(pady=10)
 
 # TODO 8: vytvorte funkci close_window(), ktera zavre okno
 #  a tlacitko s textem "Zavřít", ktery ji zavola
-close_button = ttk.Button(window, text="Close", command=window.destroy)
+
+def close_window():
+    window.destroy()
+
+close_button = ttk.Button(window, text="Close", command=close_window)
 close_button.pack(pady=10)
+
+
+button_2 = ttk.Button(window, text="close", command=close_window)
+button_2.pack(pady=10)
+
 
 # spusteni GUI
 window.mainloop()

@@ -17,19 +17,29 @@ window.geometry("300x120")
 
 # TODO 1: vytvorte Label s textem "Tady se zobrazi tvuj napsany
 #  text" a umistete ho
-label = ...
+label = ttk.Label(window, text="Tady se zobrazi tvuj napsany text")
+label.grid(row=0, column=0)
 
 # TODO 2: vytvorte Entry o sirce 30 znaku a umistete ho
-entry = ...
+entry = ttk.Entry(window, width=30)
+entry.grid(row=2, column=0)
 
 # TODO 3: napiste funkci zobraz_text(), ktera:
 #  - precte text z entry
 #  - pokud je prazdny, nastavi labelu text "Nic jsi nenapsal"
 #  - jinak nastavi labelu text "Napsal jsi: " + precteny text
-...
+def zobraz_text():
+    napsany_text = entry.get()
+    if not napsany_text:
+       label.configure(text="Nic jsi nenapsal!")
+    else:
+       label.configure(text="Napsal jsi " + napsany_text)
+
+
 
 # TODO 4: vytvorte Button s textem "Zobraz text", ktery po
 #  stisknuti zavola funkci zobraz_text, widget umistete
-button = ...
-
+button = ttk.Button(window, text="Zobraz", command=zobraz_text)
+button.grid(row=3, column=0)
 # spusteni GUI
+window.mainloop()
