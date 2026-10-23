@@ -12,36 +12,64 @@ Vsechny widgety umistete pomoci grid()
 from tkinter import Tk
 from tkinter import ttk
 
-# TODO 1: vytvorte okno, nastavte titulek a velikost (cca 420x160)
-window = ...
+from tkinter import Tk
+from tkinter import ttk
 
-# TODO 2: vytvorte objekt stylu a nadefinujte jeden styl
-#  "Koeficient.TLabel" (napr. tucne pismo a vlastni barva textu),
-#  ktery pak pouzijete pro vsechny 3 popisky a, b, c
-style = ...
+window = Tk()
+window.title("Vypocet kvadraticke rovnice")
+window.geometry("420x160")
 
-# TODO 3: vytvorte popisky pro "a:", "b:" a "c:", vsem nastavte
-#  style="Koeficient.TLabel" a umistete je
-label_a = ...
-label_b = ...
-label_c = ...
+style = ttk.Style()
+style.configure("Koeficient.TLabel",
+                foreground="green", font=("Arial", 10, "bold"))
 
-# TODO 4: vytvorte 3 Entry (pro a, b, c) o sirce 10 znaku a
-#  umistete je
-entry_a = ...
-entry_b = ...
-entry_c = ...
+label_a = ttk.Label(window, text="a:", style="Koeficient.TLabel")
+label_b = ttk.Label(window, text="b:", style="Koeficient.TLabel")
+label_c = ttk.Label(window, text="c:", style="Koeficient.TLabel")
+
+label_a.grid(row=0, column=0, padx=5, pady=15)
+label_b.grid(row=0, column=2, padx=5)
+label_c.grid(row=0, column=4, padx=5)
+
+entry_a = ttk.Entry(window, width=10)
+entry_b = ttk.Entry(window, width=10)
+entry_c = ttk.Entry(window, width=10)
+
+entry_a.grid(row=0, column=1)
+entry_b.grid(row=0, column=3)
+entry_c.grid(row=0, column=5)
 
 
-# TODO 5: napiste funkci calculate(), ktera:
-#  - precte a prevede na float hodnoty z entry_a, entry_b, entry_c
-#  - spocita diskriminant D = b^2 - 4*a*c
-#  - pokud D >= 0, spocita oba koreny (zaokrouhlene na 2 des. mista)
-#  a zobrazi je v label_vysledek
-#  - pokud D < 0, zobrazi v label_vysledek text "Rovnice nema reseni"
 def calculate():
-    ...
+    try:
+        a = float(entry_a.get())
+        b = float(entry_b.get())
+        c = float(entry_c.get())
+    except ValueError:
+        label_vysledek.config(text="Zadejte platna cisla")
+        return
 
+    if a == 0:
+        label_vysledek.config(text="Koeficient a nesmi byt 0")
+        return
+
+    D = b**2 - 4*a*c
+
+    if D >= 0:
+        x1 = (-b + D**0.5) / (2*a)
+        x2 = (-b - D**0.5) / (2*a)
+        label_vysledek.config(text=f"x1 = {x1:.2f}, x2 = {x2:.2f}")
+    else:
+        label_vysledek.config(text="Rovnice nema reseni")
+
+
+button_vysledek = ttk.Button(window, text="Spocitej", command=calculate)
+button_vysledek.grid(row=1, column=0, columnspan=6, pady=10)
+
+label_vysledek = ttk.Label(window, text="")
+label_vysledek.grid(row=2, column=0, columnspan=6, pady=10)
+
+window.mainloop()
 
 # TODO 6: vytvorte tlacitko s textem "Spocitej", ktery zavola
 #  calculate(), widget umistete
