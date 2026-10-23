@@ -23,11 +23,11 @@ window = Tk()
 window.title("Kontrola rodneho cisla")
 window.geometry("420x180")
 
-label_rc = ttk.Label(window, text="Rodne cislo bez lomitka:")
-label_rc.grid(row=0, column=0, padx=10, pady=15)
+label_rc = ttk.Label(window, text="Zadejte rodne cislo bez lomitka:")
+label_rc.pack(pady=7)
 
 entry_rc = ttk.Entry(window, width=20)
-entry_rc.grid(row=0, column=1, padx=10)
+entry_rc.pack(pady=7)
 
 
 def kontrola():
@@ -62,9 +62,9 @@ def kontrola():
 
 
 button = ttk.Button(window, text="Zkontrolovat", command=kontrola)
-button.grid(row=1, column=0, columnspan=2, pady=10)
+button.pack(pady=7)
 
 label_vysledek = ttk.Label(window, text="")
-label_vysledek.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
+label_vysledek.pack(pady=7)
 
 window.mainloop()

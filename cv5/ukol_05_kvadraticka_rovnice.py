@@ -21,23 +21,23 @@ window.geometry("420x160")
 
 style = ttk.Style()
 style.configure("Koeficient.TLabel",
-                foreground="green", font=("Arial", 10, "bold"))
+                foreground="blue", font=("Arial", 10, "bold"))
 
 label_a = ttk.Label(window, text="a:", style="Koeficient.TLabel")
 label_b = ttk.Label(window, text="b:", style="Koeficient.TLabel")
 label_c = ttk.Label(window, text="c:", style="Koeficient.TLabel")
 
-label_a.grid(row=0, column=0, padx=5, pady=15)
-label_b.grid(row=0, column=2, padx=5)
-label_c.grid(row=0, column=4, padx=5)
+label_a.grid(row=0, column=0, padx=5, pady=5)
+label_b.grid(row=1, column=0, padx=5, pady=5)
+label_c.grid(row=2, column=0, padx=5, pady=5)
 
 entry_a = ttk.Entry(window, width=10)
 entry_b = ttk.Entry(window, width=10)
 entry_c = ttk.Entry(window, width=10)
 
 entry_a.grid(row=0, column=1)
-entry_b.grid(row=0, column=3)
-entry_c.grid(row=0, column=5)
+entry_b.grid(row=1, column=1)
+entry_c.grid(row=2, column=1)
 
 
 def calculate():
@@ -64,10 +64,10 @@ def calculate():
 
 
 button_vysledek = ttk.Button(window, text="Spocitej", command=calculate)
-button_vysledek.grid(row=1, column=0, columnspan=6, pady=10)
+button_vysledek.grid(row=3, column=0, padx=10)
 
 label_vysledek = ttk.Label(window, text="")
-label_vysledek.grid(row=2, column=0, columnspan=6, pady=10)
+label_vysledek.grid(row=3, column=1, padx=10)
 
 window.mainloop()
 
